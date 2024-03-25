@@ -21,6 +21,7 @@ public class CoordinateSystem : MonoBehaviour
         if(!Application.isPlaying)
         {
             DisplayCoordinates(); //Updates & displays the coords while NOT in play mode.
+            UpdateObjectName(); 
         }
     }
 
@@ -33,5 +34,10 @@ public class CoordinateSystem : MonoBehaviour
         #endif //Solves error and tells compiler that this code is meant for editor mode only.
 
         labelCoords.text = coordinates.x + "," + coordinates.y;
+    }
+
+    void UpdateObjectName()
+    {
+        transform.parent.name = coordinates.ToString(); //Converts from Vector2 to string and stores into object's parent name.
     }
 }
