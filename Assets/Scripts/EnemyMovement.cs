@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] List<EnemyDestination> path = new List<EnemyDestination>();
+    [SerializeField] List<EnemyDestination> path = new List<EnemyDestination>(); //Initialize variable type List
 
     void Start()
     {
-        
+        PrintWaypointName();
     }
 
     void PrintWaypointName()
