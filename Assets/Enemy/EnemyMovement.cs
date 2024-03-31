@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] List<EnemyDestination> path = new List<EnemyDestination>(); //Initialize variable type List.
-    
+    [SerializeField][Range(0f, 5f)] float enemySpeed = 1f;
+
     void Start()
     {
         StartCoroutine(FollowPath());
@@ -23,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
             
             while(travelPercent <= 1f)
             {
-                travelPercent += Time.deltaTime; // increases variable based on frame time.
+                travelPercent += Time.deltaTime * enemySpeed; // increases variable based on frame time and speed variable.
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent); // sets current object position to a percentage to the way between start and end positions.
 
                 yield return new WaitForEndOfFrame();

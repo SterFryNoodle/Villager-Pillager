@@ -2576,6 +2576,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7580539056676656890, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
+      propertyPath: enemySpeed
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580539056676656890, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
       propertyPath: path.Array.data[0]
       value: 
       objectReference: {fileID: 928760439}
