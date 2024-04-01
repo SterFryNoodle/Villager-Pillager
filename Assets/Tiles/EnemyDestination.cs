@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class EnemyDestination : MonoBehaviour
 {
-    
-
-    void Start()
+    void OnMouseOver()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log(transform.position);
+        }
     }
 
-    
-    void Update()
-    {
-        
-    }
 }
