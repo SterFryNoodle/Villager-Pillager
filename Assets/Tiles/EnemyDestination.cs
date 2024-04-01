@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class EnemyDestination : MonoBehaviour
 {
-    void OnMouseOver()
+    [SerializeField] bool isPlaceable;
+
+    void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (isPlaceable)
         {
-            Debug.Log(transform.position);
+            Debug.Log(transform.name);
         }
+        
     }
 
 }
