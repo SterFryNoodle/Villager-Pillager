@@ -10,7 +10,7 @@ public class EnemyDestination : MonoBehaviour
     {
         if (isPlaceable)
         {
-            Debug.Log(transform.name);
+            Debug.Log(transform.name); 
         }
         
     }
