@@ -9,17 +9,17 @@ public class TargetLocator : MonoBehaviour
 
     void Start()
     {
-        AimWeapon();
+        target = FindObjectOfType<EnemyMovement>().transform;        
     }
 
     
     void Update()
     {
-        
+        AimWeapon();
     }
 
     void AimWeapon()
     {
-
+        weapon.LookAt(target);
     }
 }
