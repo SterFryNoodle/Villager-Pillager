@@ -15,11 +15,13 @@ public class EnemyMovement : MonoBehaviour
 
     void FindPath()
     {
-        GameObject[] destinationPts = GameObject.FindGameObjectsWithTag("Path"); //Storing all gameObjects w/ "path" tag into array.
+        path.Clear(); //ensures path does not build ontop of itself or repeat.
 
-        foreach(GameObject stop in destinationPts)
+        GameObject destinationParent = GameObject.FindGameObjectWithTag("Path"); //Storing all gameObjects w/ "path" tag into array.
+
+        foreach(Transform destinationChild in destinationParent.transform)
         {
-            path.Add(stop.GetComponent<EnemyDestination>()); //Finding the EnemyDestination component in each object stored & adding into the list.
+            path.Add(destinationChild.GetComponent<EnemyDestination>()); //Finding the EnemyDestination component in each object stored & adding into the list.
         }
     }
     IEnumerator FollowPath() //Return type used with foreach loops when used in coroutines.

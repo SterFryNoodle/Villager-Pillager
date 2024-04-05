@@ -366,13 +366,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 4,3
       objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6830996446806644209, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
       propertyPath: m_Name
       value: (4, 3)
       objectReference: {fileID: 0}
     - target: {fileID: 6830996446806644209, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -769,13 +785,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 1,0
       objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 850146343849449388, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_Name
       value: (1, 0)
       objectReference: {fileID: 0}
     - target: {fileID: 850146343849449388, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5389070218844154572, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1043,13 +1075,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 3,1
       objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879613096815144079, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6830996446806644209, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
       propertyPath: m_Name
       value: (3, 1)
       objectReference: {fileID: 0}
     - target: {fileID: 6830996446806644209, guid: a23414f0cc5604746ad0eed54b7ca6c5, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1116,13 +1164,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 1,1
       objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7635723016847349619, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
       propertyPath: m_Name
       value: (1, 1)
       objectReference: {fileID: 0}
     - target: {fileID: 7635723016847349619, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1206,63 +1270,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 474606384821517630, guid: 7b1a2b70b423a084989cc22bccb425df, type: 3}
   m_PrefabInstance: {fileID: 1224409248}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1227149741
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4774564251958329481, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5816761963758538202, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
-      propertyPath: m_Name
-      value: Enemy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3a4cc92317e0eec4a9dc45cbc366db70, type: 3}
 --- !u!1001 &1244944463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1457,13 +1464,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 2,1
       objectReference: {fileID: 0}
+    - target: {fileID: 7169560749576306564, guid: c49e7b40188bac241ba28f5836a32245, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169560749576306564, guid: c49e7b40188bac241ba28f5836a32245, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169560749576306564, guid: c49e7b40188bac241ba28f5836a32245, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169560749576306564, guid: c49e7b40188bac241ba28f5836a32245, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7794431754477963002, guid: c49e7b40188bac241ba28f5836a32245, type: 3}
       propertyPath: m_Name
       value: (2, 1)
       objectReference: {fileID: 0}
     - target: {fileID: 7794431754477963002, guid: c49e7b40188bac241ba28f5836a32245, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2081,13 +2104,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 3,3
       objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7395911446582717965, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7635723016847349619, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
       propertyPath: m_Name
       value: (3, 3)
       objectReference: {fileID: 0}
     - target: {fileID: 7635723016847349619, guid: 2c9d607e90e1d6c499e94e76a4b2858f, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2183,13 +2222,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 3,2
       objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 850146343849449388, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_Name
       value: (3, 2)
       objectReference: {fileID: 0}
     - target: {fileID: 850146343849449388, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5389070218844154572, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2325,13 +2380,29 @@ PrefabInstance:
       propertyPath: m_text
       value: 4,4
       objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 331107473652281042, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 850146343849449388, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_Name
       value: (4, 4)
       objectReference: {fileID: 0}
     - target: {fileID: 850146343849449388, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5389070218844154572, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2568,7 +2639,7 @@ GameObject:
   - component: {fileID: 2137962771}
   m_Layer: 0
   m_Name: Path
-  m_TagString: Untagged
+  m_TagString: Path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2586,9 +2657,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1411373539}
   - {fileID: 928760438}
   - {fileID: 1191392703}
+  - {fileID: 1411373539}
   - {fileID: 1104064456}
   - {fileID: 1878100679}
   - {fileID: 1771251565}
@@ -2725,4 +2796,3 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1521323855}
   - {fileID: 2000033238}
-  - {fileID: 1227149741}
