@@ -9,9 +9,19 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
+        FindPath();
         StartCoroutine(FollowPath());
     }
 
+    void FindPath()
+    {
+        GameObject[] destinationPts = GameObject.FindGameObjectsWithTag("Path"); //Storing all gameObjects w/ "path" tag into array.
+
+        foreach(GameObject stop in destinationPts)
+        {
+            path.Add(stop.GetComponent<EnemyDestination>()); //Finding the EnemyDestination component in each object stored & adding into the list.
+        }
+    }
     IEnumerator FollowPath() //Return type used with foreach loops when used in coroutines.
     {
         foreach(EnemyDestination destination in path)
