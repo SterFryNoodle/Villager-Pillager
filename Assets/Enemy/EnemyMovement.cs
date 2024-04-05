@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         FindPath();
+        ReturnToBeginning();
         StartCoroutine(FollowPath());
     }
 
@@ -19,13 +20,17 @@ public class EnemyMovement : MonoBehaviour
 
         GameObject destinationParent = GameObject.FindGameObjectWithTag("Path"); //Storing path parent gameObject w/ "path" tag
 
-        foreach(Transform destinationChild in destinationParent.transform) //Finds the transform of each child object from the parent transform component.
+        foreach(Transform destinationChild in destinationParent.transform) //Finds the transform of each child object from the parent.
         {
             path.Add(destinationChild.GetComponent<EnemyDestination>()); //Finding the EnemyDestination component in each object stored & adding into the list.
         }
     }
 
-    
+    void ReturnToBeginning() //Sets enemies to first tile set in the path.
+    {
+        transform.position = path[0].transform.position;
+    }
+
     IEnumerator FollowPath() //Return type used with foreach loops when used in coroutines.
     {
         foreach(EnemyDestination destination in path)
