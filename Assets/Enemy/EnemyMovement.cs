@@ -17,13 +17,15 @@ public class EnemyMovement : MonoBehaviour
     {
         path.Clear(); //ensures path does not build ontop of itself or repeat.
 
-        GameObject destinationParent = GameObject.FindGameObjectWithTag("Path"); //Storing all gameObjects w/ "path" tag into array.
+        GameObject destinationParent = GameObject.FindGameObjectWithTag("Path"); //Storing path parent gameObject w/ "path" tag
 
-        foreach(Transform destinationChild in destinationParent.transform)
+        foreach(Transform destinationChild in destinationParent.transform) //Finds the transform of each child object from the parent transform component.
         {
             path.Add(destinationChild.GetComponent<EnemyDestination>()); //Finding the EnemyDestination component in each object stored & adding into the list.
         }
     }
+
+    
     IEnumerator FollowPath() //Return type used with foreach loops when used in coroutines.
     {
         foreach(EnemyDestination destination in path)
@@ -42,5 +44,7 @@ public class EnemyMovement : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }            
         }
+
+        Destroy(gameObject);
     }
 }
