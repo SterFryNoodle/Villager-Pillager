@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] int hitPoints = 2;
+    [SerializeField] int maxHitPoints = 2;
 
     int currentHitPoints;
 
     void Start()
     {
-        currentHitPoints = hitPoints;
+        currentHitPoints = maxHitPoints;
     }
     
     void OnParticleCollision(GameObject other)
@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHitPoints--;
 
-        if (currentHitPoints == 0)
+        if (currentHitPoints <= 0)
         {
             Destroy(gameObject);
         }

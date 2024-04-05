@@ -6,13 +6,20 @@ using TMPro;
 [ExecuteAlways]
 public class CoordinateSystem : MonoBehaviour
 {
+    [SerializeField] Color defaultColor = Color.white;
+    [SerializeField] Color blockedColor = Color.gray;    
+    
     TextMeshPro labelCoords;
     Vector2Int coordinates = new Vector2Int(); //Initialize variable w/ "new" keyword as it is a  normal
                                                //struct type and NOT a monobehavior class.
+    EnemyDestination waypoint;
 
     void Awake()
     {
         labelCoords = GetComponent<TextMeshPro>();
+        labelCoords.enabled = false;
+
+        waypoint = GetComponentInParent<EnemyDestination>();
         DisplayCoordinates(); //Displays current coords text once in play mode; Doesn't update.
     }
 
@@ -22,6 +29,29 @@ public class CoordinateSystem : MonoBehaviour
         {
             DisplayCoordinates(); //Updates & displays the coords while NOT in play mode.
             UpdateObjectName(); 
+        }
+
+        ColorCoordinates(); //Visually shows which tiles are placeable and not placeable.
+        ToggleLabels();
+    }
+
+    void ToggleLabels()
+    {
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            labelCoords.enabled = !labelCoords.IsActive();
+        }
+    }
+
+    void ColorCoordinates()
+    {
+        if(waypoint.IsPlaceable)
+        {
+            labelCoords.color = defaultColor;
+        }
+        else
+        {
+            labelCoords.color = blockedColor;
         }
     }
 
