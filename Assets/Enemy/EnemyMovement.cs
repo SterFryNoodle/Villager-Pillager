@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] List<EnemyDestination> path = new List<EnemyDestination>(); //Initialize variable type List.
     [SerializeField][Range(0f, 5f)] float enemySpeed = 1f;
 
-    void Start()
+    void OnEnable() //Resets the function everytime the gameObject attached is re-enabled.
     {
         FindPath();
         ReturnToBeginning();

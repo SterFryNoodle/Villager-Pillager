@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
 
     int currentHitPoints;
 
-    void Start()
+    void OnEnable() //Resets the function everytime the gameObject attached is re-enabled.
     {
         currentHitPoints = maxHitPoints;
     }
