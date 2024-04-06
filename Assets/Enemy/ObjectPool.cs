@@ -17,10 +17,29 @@ public class ObjectPool : MonoBehaviour
 
     void Start()
     {
-        
+        StartCoroutine(SpawnEnemy());
     }
 
-   
+    IEnumerator SpawnEnemy()
+    {
+        while (true)
+        {
+            EnableObjectInPool();
+            yield return new WaitForSeconds(spawnTimer);
+        }
+    }
+     void EnableObjectInPool()
+    {
+        for (int j = 0; j < pool.Length; j++)
+        {
+            if (pool[j].activeInHierarchy == false)
+            {
+                pool[j].SetActive(true);
+                return; //resets the loop early instead of waiting for enemy object to reach end of path to spawn another.
+            }            
+        }
+    }
+
     void PopulatePool()
     {
         pool = new GameObject[poolSize]; //Initializes pool array with size.
@@ -30,5 +49,5 @@ public class ObjectPool : MonoBehaviour
             pool[i] = Instantiate(enemyPrefab, transform);
             pool[i].SetActive(false); //Sets gameObjects within array as disabled by default.
         }
-    }
+    }    
 }
