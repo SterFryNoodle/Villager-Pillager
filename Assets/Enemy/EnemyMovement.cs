@@ -50,6 +50,6 @@ public class EnemyMovement : MonoBehaviour
             }            
         }
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
