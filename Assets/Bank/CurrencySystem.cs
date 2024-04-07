@@ -9,14 +9,18 @@ public class CurrencySystem : MonoBehaviour
     int currentBalance;
     public int CurrentBalance { get { return currentBalance; } } //Creates a property of the private variable currentBalance.
 
-    void Start()
+    void Awake()
     {
         currentBalance = startingBalance;
     }
 
-    
-    void Update()
+    public void Deposit(int amount)
     {
-        
+        currentBalance += Mathf.Abs(amount);
+    }
+
+    public void Withdraw(int amount)
+    {
+        currentBalance -= Mathf.Abs(amount);
     }
 }
