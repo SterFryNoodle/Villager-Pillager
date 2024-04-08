@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CurrencySystem : MonoBehaviour
 {
@@ -24,5 +25,11 @@ public class CurrencySystem : MonoBehaviour
     {
         currentBalance -= Mathf.Abs(amount);
         Debug.Log(currentBalance);
+
+        if(currentBalance < 0)
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.buildIndex);
+        }
     }
 }
