@@ -11,12 +11,7 @@ public class TowerPlacement : MonoBehaviour
     {
         bank = GetComponent<CurrencySystem>();
     }
-        
-    void Update()
-    {
-        
-    }
-
+    
     public void TowerCosts()
     {
         if(bank == null)
@@ -25,5 +20,12 @@ public class TowerPlacement : MonoBehaviour
         }
 
         bank.Withdraw(goldCosts);
+    }
+
+    public bool CreateTower(TowerPlacement tower, Vector3 position)
+    {
+        Instantiate(tower.gameObject, position, Quaternion.identity);
+
+        return true;
     }
 }

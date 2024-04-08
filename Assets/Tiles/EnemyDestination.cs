@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyDestination : MonoBehaviour
-{    
-    [SerializeField] GameObject towerPrefab;
+{
+    [SerializeField] TowerPlacement towerPrefab;
 
     [SerializeField] bool isPlaceable;
     public bool IsPlaceable { get { return isPlaceable; } } //This property of the bool variable allows other scripts to access the variable
@@ -14,10 +14,9 @@ public class EnemyDestination : MonoBehaviour
     {
         if (isPlaceable)
         {
-            Instantiate(towerPrefab, transform.position, Quaternion.identity);
-            isPlaceable = false;
+            bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position); 
+            
+            isPlaceable = !isPlaced;
         }
-        
-    }
-
+    }        
 }

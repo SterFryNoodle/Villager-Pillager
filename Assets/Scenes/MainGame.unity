@@ -856,6 +856,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 4583182695433709395, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
+      propertyPath: towerPrefab
+      value: 
+      objectReference: {fileID: 7201889410575413529, guid: 4478a71f3c4d9ae47bb42bf347956707, type: 3}
     - target: {fileID: 5389070218844154572, guid: c37b24e3af25e3246a72592ef09c0f97, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.7631
