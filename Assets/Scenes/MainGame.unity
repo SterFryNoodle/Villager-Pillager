@@ -2871,6 +2871,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 8342158896247845025, guid: 7b1a2b70b423a084989cc22bccb425df, type: 3}
+      propertyPath: towerPrefab
+      value: 
+      objectReference: {fileID: 7201889410575413529, guid: 4478a71f3c4d9ae47bb42bf347956707, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

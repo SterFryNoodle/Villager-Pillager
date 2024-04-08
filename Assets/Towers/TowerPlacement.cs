@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TowerPlacement : MonoBehaviour
 {
@@ -12,20 +13,20 @@ public class TowerPlacement : MonoBehaviour
         bank = GetComponent<CurrencySystem>();
     }
     
-    public void TowerCosts()
-    {
-        if(bank == null)
-        {
-            return;
-        }
-
-        bank.Withdraw(goldCost);
-    }
-
     public bool CreateTower(TowerPlacement tower, Vector3 position)
     {
-        Instantiate(tower.gameObject, position, Quaternion.identity);
+        if (bank == null)
+        {
+            return false;
+        }
 
-        return true;
+        if (bank.CurrentBalance > goldCost)
+        {
+            bank.Withdraw(goldCost);
+            Instantiate(tower.gameObject, position, Quaternion.identity);
+            return true;
+        }
+        Debug.Log("Not enough gold to place tower.");
+        return false;        
     }
 }
