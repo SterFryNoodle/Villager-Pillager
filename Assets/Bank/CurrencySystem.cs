@@ -17,10 +17,12 @@ public class CurrencySystem : MonoBehaviour
     public void Deposit(int amount)
     {
         currentBalance += Mathf.Abs(amount);
+        Debug.Log(currentBalance);
     }
 
     public void Withdraw(int amount)
     {
         currentBalance -= Mathf.Abs(amount);
+        Debug.Log(currentBalance);
     }
 }

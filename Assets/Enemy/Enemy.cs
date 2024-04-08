@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] int killReward = 25;
+    [SerializeField] int goldPenalty = 50;
+
+    CurrencySystem bank;
     void Start()
     {
-        
+        bank = FindObjectOfType<CurrencySystem>();
+    }
+    
+    public void RewardGold() //Make return type bool later to create a safeguard for successful or failed deposits.
+    {
+        if (bank == null)
+        {
+            return;
+        }
+
+        bank.Deposit(killReward); //Deposits gold into currencySystem script function.
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DeductGold() //Make return type bool later to create a safeguard for successful or failed withdraws.
     {
-        
+        if (bank == null)
+        {
+            return;
+        }
+
+        bank.Withdraw(goldPenalty); //Withdraws gold from currencySystem script function.
     }
 }

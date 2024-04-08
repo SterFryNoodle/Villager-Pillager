@@ -7,11 +7,17 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] List<EnemyDestination> path = new List<EnemyDestination>(); //Initialize variable type List.
     [SerializeField][Range(0f, 5f)] float enemySpeed = 1f;
 
+    Enemy enemy;
     void OnEnable() //Resets the function everytime the gameObject attached is re-enabled.
     {
         FindPath();
         ReturnToBeginning();
         StartCoroutine(FollowPath());
+    }
+
+    void Start()
+    {
+        enemy = GetComponent<Enemy>();
     }
 
     void FindPath()
@@ -51,5 +57,6 @@ public class EnemyMovement : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+        enemy.DeductGold();
     }
 }
