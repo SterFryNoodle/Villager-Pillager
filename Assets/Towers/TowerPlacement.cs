@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TowerPlacement : MonoBehaviour
 {
-    [SerializeField] int goldCosts = 50;
+    [SerializeField] int goldCost = 50;
 
     CurrencySystem bank;
     void Start()
@@ -19,7 +19,7 @@ public class TowerPlacement : MonoBehaviour
             return;
         }
 
-        bank.Withdraw(goldCosts);
+        bank.Withdraw(goldCost);
     }
 
     public bool CreateTower(TowerPlacement tower, Vector3 position)
