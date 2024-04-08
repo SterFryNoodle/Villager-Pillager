@@ -1591,6 +1591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingBalance: 150
+  currencyDisplay: {fileID: 2084370219}
 --- !u!4 &1339221982
 Transform:
   m_ObjectHideFlags: 0
@@ -2860,7 +2861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 128.04, y: 16.51}
+  m_AnchoredPosition: {x: 136.9, y: 16.51}
   m_SizeDelta: {x: 256.0865, y: 33.0204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2084370219
@@ -2917,7 +2918,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
