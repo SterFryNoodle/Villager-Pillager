@@ -8,19 +8,17 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] int goldCost = 50;
 
     CurrencySystem bank;
-    void Start()
-    {
-        bank = GetComponent<CurrencySystem>();
-    }
-    
+        
     public bool CreateTower(TowerPlacement tower, Vector3 position)
     {
+        bank = FindObjectOfType<CurrencySystem>();
+        
         if (bank == null)
         {
             return false;
         }
 
-        if (bank.CurrentBalance > goldCost)
+        if (bank.CurrentBalance >= goldCost)
         {
             bank.Withdraw(goldCost);
             Instantiate(tower.gameObject, position, Quaternion.identity);
