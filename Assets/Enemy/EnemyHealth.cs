@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))] //Adds a script component requirement which includes both scripts when adding this script to an object.
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int maxHitPoints = 2;
