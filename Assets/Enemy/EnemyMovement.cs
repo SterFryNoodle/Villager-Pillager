@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] List<EnemyDestination> path = new List<EnemyDestination>(); //Initialize variable type List.
@@ -28,7 +29,12 @@ public class EnemyMovement : MonoBehaviour
 
         foreach(Transform destinationChild in destinationParent.transform) //Finds the transform of each child object from the parent.
         {
-            path.Add(destinationChild.GetComponent<EnemyDestination>()); //Finding the EnemyDestination component in each object stored & adding into the list.
+            EnemyDestination enemyDestination = destinationChild.GetComponent<EnemyDestination>(); 
+
+            if (enemyDestination != null) //Safeguard check for EnemyDestination component in each child object before adding into path list.
+            {
+                path.Add(enemyDestination); //Finding the EnemyDestination component in each object child under & adding into the list.
+            }
         }
     }
 
