@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Enemy))]
@@ -43,6 +44,12 @@ public class EnemyMovement : MonoBehaviour
         transform.position = path[0].transform.position;
     }
 
+    void AtEndOfPath()
+    {
+        gameObject.SetActive(false);
+        enemy.DeductGold();        
+    }
+
     IEnumerator FollowPath() //Return type used with foreach loops when used in coroutines.
     {
         foreach(EnemyDestination destination in path)
@@ -60,9 +67,7 @@ public class EnemyMovement : MonoBehaviour
 
                 yield return new WaitForEndOfFrame();
             }            
-        }
-
-        gameObject.SetActive(false);
-        enemy.DeductGold();
+        }      
+        AtEndOfPath();
     }
 }
