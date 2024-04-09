@@ -32,7 +32,7 @@ public class CoordinateSystem : MonoBehaviour
             UpdateObjectName(); 
         }
 
-        ColorCoordinates(); //Visually shows which tiles are placeable and not placeable.
+        SetCoordinateColor(); //Visually shows which tiles are placeable and not placeable.
         ToggleLabels();
     }
 
@@ -44,7 +44,7 @@ public class CoordinateSystem : MonoBehaviour
         }
     }
 
-    void ColorCoordinates()
+    void SetCoordinateColor()
     {
         if(waypoint.IsPlaceable)
         {
