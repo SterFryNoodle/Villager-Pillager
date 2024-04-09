@@ -5,7 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Enemy))] //Adds a script component requirement which includes both scripts when adding this script to an object.
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] int maxHitPoints = 2;
+    [SerializeField][Range(0,5)] int maxHitPoints = 2;
+
+    [Tooltip("Adds amount of hp when enemies die.")]
     [SerializeField] int difficultyLevel = 1;
     int currentHitPoints;
     Enemy enemy;
