@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 2
-  difficultyLevel: 1
+  difficultyLevel: 2
 --- !u!114 &-455762566937422051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killReward: 25
-  goldPenalty: 25
+  goldPenalty: 50
 --- !u!65 &6933338321771673140
 BoxCollider:
   m_ObjectHideFlags: 0
