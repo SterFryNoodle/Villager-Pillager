@@ -8543,6 +8543,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8624,6 +8625,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 70, y: 270, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2646696fe1d7d34aa8a707e01793756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &973811004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19428,6 +19441,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 377585432332669790, guid: fe377a4581c9d8644bf2c74cc7ae8d10, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 377585432332669790, guid: fe377a4581c9d8644bf2c74cc7ae8d10, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 377585432332669790, guid: fe377a4581c9d8644bf2c74cc7ae8d10, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 214.8555
+      objectReference: {fileID: 0}
+    - target: {fileID: 377585432332669790, guid: fe377a4581c9d8644bf2c74cc7ae8d10, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 23.8298
+      objectReference: {fileID: 0}
+    - target: {fileID: 512368255937914984, guid: fe377a4581c9d8644bf2c74cc7ae8d10, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 512368255937914984, guid: fe377a4581c9d8644bf2c74cc7ae8d10, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 895858598190947730, guid: fe377a4581c9d8644bf2c74cc7ae8d10, type: 3}
       propertyPath: m_Name
       value: Canvas
